@@ -8,7 +8,7 @@ class MorseCodeBrain:
         for x in text.lower():
             if x not in self.rules:
                 rejected_letters.append(x)
-        return f"({','.join(rejected_letters)}) not allowed. Please enter a valid text (a-z, 0-9, space)"
+        return rejected_letters
 
     def translate(self, text):
         reformatted_text = text.lower()

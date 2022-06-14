@@ -13,7 +13,7 @@ while still_translating:
     user_input = input("Enter your text: ")
 
     if brain.validate(user_input):
-        print(brain.validate(user_input))
+        print(f"({','.join(brain.validate(user_input))}) not allowed. Only use (a-z), (0-9) and space.")
     else:
         print(f"Here is your morse code: {brain.translate(user_input)}")
 
